@@ -98,7 +98,7 @@ function Explore({ onOpen, onGoPricing }:{ onOpen:(l:Listing)=>void; onGoPricing
             </div>
             <div>
               <label className="text-xs text-slate-500">Precio máx. (USD)</label>
-              <input type="number" placeholder="Ej. 200000" value={price or ''} onChange={e=>setPrice(Number(e.target.value or 0))} className="w-full mt-1 rounded-xl border-slate-200"/>
+              <input type="number" placeholder="Ej. 200000" value={price || ''} onChange={e=>setPrice(Number(e.target.value || 0))} className="w-full mt-1 rounded-xl border-slate-200"/>
             </div>
             <div className="text-xs text-slate-500">* Filtros demo (sin backend)</div>
             <button onClick={onGoPricing} className="w-full rounded-xl border border-slate-200 py-2 hover:bg-slate-50">Ver planes</button>
